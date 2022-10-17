@@ -6,7 +6,7 @@ from lightgbm import LGBMClassifier
 
 st.title("Employee Attrition Prediction")
 classifier = LGBMClassifier()
-classifier1 = classifier.Booster(model_file='lgbm1.json')
+classifier1 = lightgbm.Booster(model_file='lgbm1.json')
 
 
 def prediction(Age, DailyRate, DistanceFromHome,Education,
